@@ -1,0 +1,74 @@
+#login_page {
+  width: 100%;
+  position: relative;
+}
+/* login form */
+.login_container {
+  width: 400px;
+  padding-top: 150px;
+  margin-right: auto;
+  margin-left: auto;
+}
+form[name="login"] {
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+fieldset.login {
+  border: none;
+}
+legend.login {
+  text-align: center;
+  font-size: 36px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #4d4d4d;
+}
+input[type="text"] {
+  width: 100%;
+  height: 46px;
+  margin-top: 20px;
+}
+input[type="password"] {
+  width: 100%;
+  height: 46px;
+  margin-top: 10px;
+}
+input[type="submit"] {
+  width: 100%;
+  border: none;
+  background-color: #4a2922cc;
+  color: #fff;
+  height: 46px;
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #fed07a;
+  color: #000;
+}
+/* inform */
+.inform {
+  padding-bottom: 20px;
+  width: 100%;
+}
+.regist {
+  text-align: center;
+}
+.regist a {
+  font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #cecece;
+}
+.regist a:hover {
+  color: #4d4d4d;
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .login_container {
+    width: 300px;
+    padding-top: 100px;
+  }
+}

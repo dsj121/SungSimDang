@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>성심당</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+    </style>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/c0ef167c3c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/main slide.css" />
+    <link rel="stylesheet" href="css/grid contents.css" />
+    <link rel="stylesheet" href="css/display.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav>
+      <div class="navContainer">
+        <div class="logo">
+          <a href="성심당.html">
+            <img src="images/sunsimdang_logo.jpg" alt="" />
+          </a>
+        </div>
+        <!-- mobile menu -->
+        <div class="mo_nav">
+          <i class="fas fa-bars"></i>
+          <div class="mo_menu">
+            <i class="fas fa-times"></i>
+            <ul class="mo_util_menu clear">
+              <li><a href="login.html">로그인</a></li>
+              <li><a href="regist.html">회원가입</a></li>
+              <li><a href="onworking.html">배송조회</a></li>
+              <li><a href="onworking.html">고객센터</a></li>
+            </ul>
+            <ul class="mo_category clear">
+              <li class="">
+                <a href="#">전체 카테고리</a>
+                <ul class="mo_sub_category clear">
+                  <li><a href="#">빵</a></li>
+                  <li><a href="#">전통과자</a></li>
+                  <li><a href="#">케이크</a></li>
+                  <li><a href="#">롤/파운드</a></li>
+                  <li><a href="#">성심당 답례</a></li>
+                </ul>
+              </li>
+              <li><a href="list.html">베스트</a></li>
+              <li><a href="new_list.html">신상품</a></li>
+              <li><a href="onworking.html">상품배송</a></li>
+              <li><a href="onworking.html">프로모션</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mo_icon">
+          <a href="onworking.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <!-- util -->
+        <div class="util_menu">
+          <ul class="clear">
+            <li><a href="login.html">로그인</a></li>
+            <li><a href="regist.html">회원가입</a></li>
+            <li><a href="onworking.html">배송조회</a></li>
+            <li><a href="onworking.html">고객센터</a></li>
+          </ul>
+        </div>
+        <!-- category -->
+        <div class="category clear">
+          <ul class="cat_depth1 clear">
+            <li class="active">
+              <a href="#">
+                <i class="fas fa-bars"></i>
+                <span>전체 카테고리</span>
+              </a>
+              <ul class="cat_depth2 clear">
+                <li>
+                  <a href="#"><span>빵</span></a>
+                  <ul class="cat_depth3 clear">
+                    <li><a href="#">성심당특산품</a></li>
+                    <li><a href="#">단과자빵</a></li>
+                    <li><a href="#">식빵</a></li>
+                    <li><a href="#">샌드위치</a></li>
+                    <li><a href="#">도넛</a></li>
+                    <li><a href="#">페스츄리</a></li>
+                    <li><a href="#">건강빵</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span>전통과자</span></a>
+                  <ul class="cat_depth3 clear">
+                    <li><a href="#">대전부르스 떡</a></li>
+                    <li><a href="#">대전부르스 만주</a></li>
+                    <li><a href="#">대전부르스 전병</a></li>
+                    <li><a href="#">대전부르스 약과</a></li>
+                    <li><a href="#">앙떡타르트/쑥떡앙빵</a></li>
+                    <li><a href="#">한과/식혜</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span>케이크</span></a>
+                  <ul class="cat_depth3 clear">
+                    <li><a href="#">케이크 (생크림)</a></li>
+                    <li><a href="#">케이크 (무스)</a></li>
+                    <li><a href="#">케이크 (타르트)</a></li>
+                    <li><a href="#">맞춤 케이크</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span>롤 / 파운드</span></a>
+                  <ul class="cat_depth3 clear">
+                    <li><a href="#">롤케이크</a></li>
+                    <li><a href="#">파운드케이크</a></li>
+                    <li><a href="#">선물세트</a></li>
+                    <li><a href="#">디저트</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><span>성심당 답례</span></a>
+                  <ul class="cat_depth3 clear">
+                    <li><a href="#">답례품</a></li>
+                    <li><a href="#">다과박스</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="list.html">베스트</a></li>
+            <li><a href="new_list.html">신상품</a></li>
+            <li><a href="onworking.html">상품배송</a></li>
+            <li><a href="onworking.html">프로모션</a></li>
+          </ul>
+        </div>
+        <!-- search tab -->
+        <div class="search_tab">
+          <ul class="icon_bundle">
+            <li>
+              <a href="onworking.html"><i class="far fa-user"></i></a>
+            </li>
+            <li>
+              <a href="onworking.html"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+            <li>
+              <a href="onworking.html"><i class="fas fa-search"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav script -->
+    <script src="js/nav.js"></script>
+    <!-- main slide -->
+    <div class="main_slide">
+      <div class="main_container">
+        <div class="slide slide0 active">
+          <div class="slide_text">
+            <div class="inner_text">
+              <h2>한결같은 맛</h2>
+              <p>성심당은 대전의 60년 전통 빵집입니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide slide1">
+          <div class="slide_text">
+            <div class="inner_text">
+              <h2>휴식같은 건강빵</h2>
+              <p>정직한 재료로 건강한 빵을 만듭니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide slide2"></div>
+      </div>
+      <div class="left_arrow">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div class="right_arrow">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+      <div class="btn">
+        <ul class="slide_btn clear">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div class="play_stop">
+          <i class="far fa-play-circle"></i>
+          <!-- <i class="far fa-stop-circle stop"></i> -->
+        </div>
+      </div>
+    </div>
+    <!-- main slide script -->
+    <script src="js/main slide.js"></script>
+    <!-- scrollPage -->
+    <div id="scrollPage">
+      <!-- grid contents -->
+      <div id="grid_container">
+        <!-- 6 items -->
+        <!-- item1 -->
+        <div class="item item1">
+          <h2>성심당 베스트</h2>
+          <div class="sub_slideContainer">
+            <ul class="sub_slideList clear">
+              <li>
+                <img src="images/item1_slide1.png" alt="" />
+                <p>튀소세트</p>
+                <span>10,000원</span>
+              </li>
+              <li>
+                <img src="images/item1_slide2.png" alt="" />
+                <p>형제세트</p>
+                <span>10,000원</span>
+              </li>
+              <li>
+                <img src="images/item1_slide3.png" alt="" />
+                <p>초코튀소삼형제</p>
+                <span>11,000</span>
+              </li>
+              <li>
+                <img src="images/item1_slide4.png" alt="" />
+                <p>반반세트</p>
+                <span>10,900원</span>
+              </li>
+            </ul>
+            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        <!-- item2 -->
+        <div class="item item2">
+          <div class="inner_box">
+            <div class="inner_text">
+              <h2>성심당 답례품</h2>
+              <p>
+                <span>대한민국 최고의 제과점</span> <br />
+                성심당 선물세트는 정성이 가득 담겨있습니다. <br />
+                성심당 선물세트로 여러분의 마음을 전해주세요.
+              </p>
+              <a href="onworking.html">지금 살펴보기!</a>
+            </div>
+          </div>
+        </div>
+        <!-- item3 -->
+        <div class="item item3">
+          <div class="row">
+            <div class="middle_text">
+              <h2>금주의 행사</h2>
+              <p>정성이 가득 담긴 빵을 지금 골라보세요.</p>
+              <a href="onworking.html">지금 살펴보기!</a>
+            </div>
+            <div class="row_img"><img src="images/item3_img.png" alt="" /></div>
+          </div>
+        </div>
+        <!-- item4 -->
+        <div class="item item4">
+          <div class="row">
+            <div class="middle_text">
+              <h2>성심당 특산품</h2>
+              <p>성심당이 자랑하는 특별한 빵입니다.</p>
+              <a href="onworking.html">지금 살펴보기!</a>
+            </div>
+            <div class="row_img"><img src="images/item4_img.png" alt="" /></div>
+          </div>
+        </div>
+        <!-- item5 -->
+        <div class="item item5">
+          <div class="item_matt">
+            <div class="item_text">
+              <h2>성심당 STORY</h2>
+              <p>
+                대전역 앞 작은 찐빵집으로 시작해 <br />
+                60년동안 시민의 사랑으로 성장하여 <br />
+                대전을 대표하는 향토기업이 되었습니다.
+              </p>
+              <a href="onworking.html">지금 살펴보기</a>
+            </div>
+          </div>
+        </div>
+        <!-- item6 -->
+        <div class="item item6">
+          <div class="item_matt">
+            <div class="item_text">
+              <h2>성심당 FAMILY</h2>
+              <p>
+                성심당의 또다른 브랜드들을 <br />
+                지금 만나보세요!
+              </p>
+              <a href="onworking.html">지금 살펴보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- grid contents script -->
+      <script src="js/grid contents.js"></script>
+      <!-- display -->
+      <div id="display_container">
+        <!-- display title -->
+        <div class="title">
+          <h3>성심당's PICK</h3>
+          <p>
+            60년 전통 제과점에서 강력추천합니다. <br />
+            성심당이 자랑하는 빵들을 살펴보세요.
+          </p>
+          <a href="onworking.html">지금 살펴보기!</a>
+        </div>
+        <!-- display grid -->
+        <ul class="dsp_grid">
+          <li class="dsp_grid_item">
+            <a href="">
+              <div class="dsp_img_container">
+                <img src="images/display 1.png" alt="" />
+              </div>
+              <div class="dsp_text">
+                <div class="dsp_name">파이만주세트(8개입)</div>
+                <span class="dsp_exp"> 겉바속촉 파이와 달콤 팥앙금가득 파이만주. 파이 반죽에 팥앙금과 톡톡 씹히는 호두가 들어있어 남/녀/노/소 모두가 좋아하는 성심당 인기빵 입니다. </span>
+                <br />
+                <span class="dsp_price">8,000원</span>
+              </div>
+            </a>
+          </li>
+          <li class="dsp_grid_item">
+            <a href="">
+              <div class="dsp_img_container">
+                <img src="images/display 2.png" alt="" />
+              </div>
+              <div class="dsp_text">
+                <div class="dsp_name">약과전병세트</div>
+                <span class="dsp_exp">
+                  올곧은 재료와 깨끗한 기름으로 만든 달지 않으면서 촉촉한 맛이 일품인 수제약과와 오랜 시간 한 장 한 장 직접 구워내 더욱 고소하고 맛있는 옛맛 심전병이 세트로 들어있는 안목있는 결혼 답례
+                  세트입니다.
+                </span>
+                <br />
+                <span class="dsp_price">20,000원</span>
+              </div>
+            </a>
+          </li>
+          <li class="dsp_grid_item">
+            <a href="">
+              <div class="dsp_img_container">
+                <img src="images/display 3.png" alt="" />
+              </div>
+              <div class="dsp_text">
+                <div class="dsp_name">튀소세트(6개입)</div>
+                <span class="dsp_exp"> 1980년 탄생 소보로, 앙금빵, 도넛의 3단 합체빵. 하나의 빵으로 3가지 맛을 즐기실 수 있는성심당 No.1 튀김소보로 입니다. </span>
+                <br />
+                <span class="dsp_price">10,000원</span>
+              </div>
+            </a>
+          </li>
+          <li class="dsp_grid_item">
+            <a href="">
+              <div class="dsp_img_container">
+                <img src="images/display 4.png" alt="" />
+              </div>
+              <div class="dsp_text">
+                <div class="dsp_name">15겹 크레페 2호</div>
+                <span class="dsp_exp">
+                  한겹한겹 정성껏 구워 낸 크레페에 층층이 샌드된 생크림을 발라 완성한 쉐프 추천 케이크. 성심당 케익부띠끄의 인기만점 케익으로 한장 한장 돌돌 말아 먹는 재미가 솔솔~ </span
+                ><br />
+                <span class="dsp_price">29,000원</span>
+              </div>
+            </a>
+          </li>
+          <li class="dsp_grid_item">
+            <a href="">
+              <div class="dsp_img_container">
+                <img src="images/display 5.png" alt="" />
+              </div>
+              <div class="dsp_text">
+                <div class="dsp_name">보문산메아리</div>
+                <span class="dsp_exp"> 보문산의 추억이 겹겹이 담긴 대전 시민을 위한 빵. 한겹 한겹 보드라운 빵결에 골드럼 시럽이 섬세하게 발려져 있어 깊은 풍미를 느끼실 수 있숩니다. </span>
+                <br />
+                <span class="dsp_price">5,000원</span>
+              </div>
+            </a>
+          </li>
+          <li class="dsp_grid_item">
+            <a href="">
+              <div class="dsp_img_container">
+                <img src="images/display 6.png" alt="" />
+              </div>
+              <div class="dsp_text">
+                <div class="dsp_name">딸기리나2호</div>
+                <span class="dsp_exp"> 딸기를 넣어 샌드한 케이크에 생딸기로 마무리 한 생크림 케이크. 화이트 딸기 초콜릿을 케익 옆면에 붙여 장식한 특별한 생크림 케이크 </span>
+                <br />
+                <span class="dsp_price">30,000원</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- display script -->
+      <script src="js/display.js"></script>
+      <!-- footer -->
+      <footer>
+        <div id="footer_box">
+          <div class="footer_logo">
+            <img src="images/footer logo.png" alt="logo" />
+          </div>
+          <div class="footer_copyright">
+            <span>대표: 임영진</span>
+            <span>법인명: 로쏘 주식회사</span>
+            <span>전화: 1588-8069</span>
+            <span>E-mail: yoonhd81@sungsimdang.co.kr</span>
+            <br />
+            <span>주소: 대전 중구 대종로480번길 15(은행동)</span>
+            <span>개인정보관리책임자: 윤현돈(yoonhd81@sungsimdang.co.kr)</span>
+            <br />
+            <span>사업자등록번호: 305-81-48738</span>
+            <span>통신판매신고: 제2015-대전중구-0015호</span>
+          </div>
+          <div class="footer_btn">
+            <ul class="footer_btn_list clear">
+              <li>[회사소개]</li>
+              <li>[매장안내]</li>
+              <li>[이용약관]</li>
+              <li>[고객센터]</li>
+              <li>[개인정보처리방침]</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

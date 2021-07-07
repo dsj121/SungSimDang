@@ -1,0 +1,215 @@
+.list_page {
+  width: 100%;
+}
+.list_wrap {
+  width: 100%;
+  padding: 90px 150px 50px;
+}
+/* title */
+.title_container {
+  width: 100%;
+  padding-top: 60px;
+  margin: 0px auto;
+  text-align: center;
+}
+.title_container h1 {
+  font-size: 36px;
+}
+/* list */
+.list_container {
+  width: 100%;
+}
+/* list category */
+.list_cat_container {
+  padding: 30px 100px;
+  text-align: center;
+
+  border-bottom: 2px solid black;
+}
+.list_cat_container ul {
+  display: inline-block;
+}
+.list_cat_container ul li {
+  float: left;
+  padding: 0px 10px;
+  border-left: 1px solid #000;
+  margin: 0px 20px;
+  font-size: 16px;
+  color: #000;
+  font-weight: normal;
+  cursor: pointer;
+}
+.list_cat_container ul li.active {
+  color: #ff7e8f;
+  font-weight: bold;
+}
+/* list search */
+.list_search_container {
+  padding: 0px 100px;
+  text-align: center;
+  position: relative;
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px;
+}
+.list_search_container .search_wrap {
+  display: none;
+  padding: 10px 0px;
+}
+.list_search_container .search_wrap .search_form {
+  padding: 10px 0;
+}
+.list_search_container .search_wrap .search_form .sf_title {
+  width: 200px;
+  text-align: left;
+  float: left;
+  padding-left: 20px;
+  padding-right: 70px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  border-left: 2px solid #000;
+  line-height: 16px;
+}
+.list_search_container .search_wrap .search_form .sf_content {
+  text-align: right;
+  float: right;
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 16px;
+}
+.list_search_container .search_wrap .search_form:nth-child(2) .sf_content {
+  float: left;
+}
+.list_search_container .search_wrap .search_form .sf_content input {
+  height: 20px;
+  font-size: 16px;
+  text-align: right;
+  margin: 0px 10px;
+}
+.list_search_container .search_wrap .search_form .sf_content i {
+  cursor: pointer;
+}
+.list_search_container .hide_btn {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 10px;
+  position: absolute;
+  bottom: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0px 20px 10px 20px;
+  cursor: pointer;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+/* list display */
+.list_display_container {
+  padding: 20px;
+}
+.list_display_container ul {
+  width: 100%;
+}
+.list_display_container ul li {
+  float: left;
+  width: 33%;
+  height: 650px;
+  padding: 10px 25px;
+  cursor: pointer;
+  display: block;
+}
+.list_display_container ul li .list_img_container {
+  width: 100%;
+  overflow: hidden;
+}
+.list_display_container ul li .list_img_container img {
+  width: 100%;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+.list_display_container ul li:hover .list_img_container img {
+  width: 100%;
+  transform: scale(1.2);
+}
+.list_display_container ul li .text_box {
+  text-align: center;
+  padding: 20px 10px 0px;
+  width: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.list_display_container ul li .text_box span.name {
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+}
+.list_display_container ul li .text_box span.price {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff7e8f !important;
+}
+@media screen and (min-width: 1080px) and (max-width: 1199px) {
+  .list_wrap {
+    padding: 90px 80px 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1079px) {
+  .list_wrap {
+    padding: 50px 50px 50px;
+  }
+  .list_cat_container {
+    padding: 30px 30px;
+  }
+  .list_cat_container ul li {
+    font-size: 15px;
+    margin: 0px 10px;
+  }
+  .list_search_container {
+    padding: 0px;
+  }
+  .list_display_container ul li {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .list_wrap {
+    padding: 50px 20px 50px;
+  }
+  .list_cat_container {
+    padding: 30px 0px;
+  }
+  .list_cat_container ul li {
+    font-size: 15px;
+    margin: 0px 8px;
+  }
+  .list_search_container {
+    padding: 0px;
+  }
+  .list_search_container .search_wrap .search_form .sf_title {
+    font-size: 11px;
+    padding-right: 20px;
+    width: 75px;
+  }
+  .list_search_container .search_wrap .search_form .sf_content input {
+    font-size: 11px;
+    height: 16px;
+    width: 100px;
+  }
+  .list_search_container .hide_btn {
+    padding: 0px 10px 10px 10px;
+  }
+  .list_display_container {
+    padding: 10px;
+  }
+  .list_display_container ul li {
+    height: 200px;
+    padding: 10px 10px;
+  }
+  .list_display_container ul li .text_box {
+    padding: 20px 0px 0px;
+  }
+  .list_display_container ul li .text_box span.name {
+    font-size: 12px;
+  }
+  .list_display_container ul li .text_box span.price {
+    font-size: 13px;
+  }
+}
