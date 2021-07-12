@@ -15,8 +15,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/event.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/regist.css" />
   </head>
   <body>
     <!-- navigation -->
@@ -151,82 +151,74 @@
     </nav>
     <!-- nav script -->
     <script src="js/nav.js"></script>
-    <!-- login -->
-    <div id="regist_page">
-      <div class="regist_container">
-        <div class="regist_title">
-          <h2>회원정보 입력</h2>
+    <!-- event page -->
+    <div class="eve_page">
+      <div class="eve_wrap">
+        <div class="eve_title_container">
+          <h1>새소식</h1>
+          <p>성심당의 새소식을 확인해보세요!</p>
         </div>
-        <form name="regist" action="#" class="regist" method="POST">
-          <div class="regist_table">
-            <ul class="required">
-              <li class="th">아이디</li>
-              <li class="td">
-                <input
-                  type="text"
-                  name="ID"
-                  placeholder="공백없는 영문/숫자 포함 6~20자"
-                  maxlength="20"
-                />
-              </li>
-            </ul>
-            <ul class="required">
-              <li class="th">비밀번호</li>
-              <li class="td">
-                <input
-                  type="password"
-                  name="password"
-                  placeholder="공백없는 영문/숫자 포함 6~20자"
-                  maxlength="20"
-                />
-              </li>
-            </ul>
-            <ul class="required">
-              <li class="th">비밀번호확인</li>
-              <li class="td">
-                <input
-                  type="password"
-                  name="password_chk"
-                  placeholder="공백없는 영문/숫자 포함 6~20자"
-                />
-              </li>
-            </ul>
-            <ul class="required">
-              <li class="th">이름</li>
-              <li class="td"><input type="text" name="name" /></li>
-            </ul>
-            <ul class="required">
-              <li class="th">이메일</li>
-              <li class="td">
-                <input type="text" name="email_fr" />@<input
-                  type="text"
-                  name="email_add"
-                />
-                <select name="email_add" id="email">
-                  <option value="">직접입력</option>
-                  <option value="naver.com">네이버</option>
-                  <option value="gmail.com">구글</option>
-                  <option value="hanmail.net">다음</option>
-                  <option value="yahoo.com">야후</option>
-                  <option value="nate.com">네이트</option>
-                </select>
-              </li>
-            </ul>
-            <ul class="required">
-              <li class="th">휴대폰번호</li>
-              <li class="td">
-                <input type="tel" name="phone1" id="phone1" maxlength="3" /> -
-                <input type="tel" name="phone2" id="phone2" maxlength="4" /> -
-                <input type="tel" name="phone3" id="phone3" maxlength="4" />
-              </li>
-            </ul>
+        <div class="eve_content_container">
+          <!-- event list -->
+          <div class="eve_list_container">
+            <div class="eve_list">
+              <div class="list_img">
+                <img src="images/event/event_1.jpg" alt="" />
+              </div>
+              <div class="list_text">
+                <h3>이달의 빵 할인행사 &lt;4월&gt;</h3>
+                <span>2021.04.01 - 04.30</span>
+                <p>
+                  성심당에서 매달 출시하는 신상품을 저렴한 가격에 맛볼 수 있는
+                  기회! <br />
+                  4월의 빵: 카카오누아
+                </p>
+                <div class="list_info_btn">자세히 보기</div>
+              </div>
+            </div>
+            <div class="eve_list">
+              <div class="list_img">
+                <img src="images/event/event_2.jpg" alt="" />
+              </div>
+              <div class="list_text">
+                <h3>성심당 프랑스 건강빵 세미나</h3>
+                <span>2021.04.01 ` 04.14</span>
+                <p>프랑스의 유명한 제빵사가 들려주는 건강한 빵 이야기.</p>
+                <div class="list_info_btn">자세히 보기</div>
+              </div>
+            </div>
+            <div class="eve_list">
+              <div class="list_img">
+                <img src="images/event/event_3.jpg" alt="" />
+              </div>
+              <div class="list_text">
+                <h3>이달의 빵 할인행사 &lt;3월&gt;</h3>
+                <span>2021.03.01 - 03.31</span>
+                <p>
+                  성심당에서 매달 출시하는 신상품을 저렴한 가격에 맛볼 수 있는
+                  기회! <br />
+                  3월의 빵: 깨돌이식빵
+                </p>
+                <div class="list_info_btn">자세히 보기</div>
+              </div>
+            </div>
           </div>
-          <button type="submit" name="submit">입력 완료</button>
-        </form>
+          <div class="btn_box">
+            <div class="expand_btn">더보기</div>
+          </div>
+          <!-- sns box -->
+          <div class="eve_sns_container">
+            <i class="fab fa-instagram"></i>
+            <h2>인스타그램에서 성심당을 만나보세요!</h2>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/sungsimdang_official/"
+              >@sungsimdang_official</a
+            >
+          </div>
+        </div>
       </div>
     </div>
-    <!-- regist.js -->
-    <script src="js/regist.js"></script>
     <!-- footer -->
     <footer>
       <div id="footer_box">

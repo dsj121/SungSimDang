@@ -16,7 +16,7 @@
     ></script>
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/regist.css" />
+    <link rel="stylesheet" href="css/delivery.css" />
   </head>
   <body>
     <!-- navigation -->
@@ -35,8 +35,8 @@
             <ul class="mo_util_menu clear">
               <li><a href="login.html">로그인</a></li>
               <li><a href="regist.html">회원가입</a></li>
-              <li><a href="onworking.html">배송조회</a></li>
-              <li><a href="onworking.html">고객센터</a></li>
+              <li><a href="#">배송조회</a></li>
+              <li><a href="#">고객센터</a></li>
             </ul>
             <ul class="mo_category clear">
               <li class="">
@@ -151,82 +151,103 @@
     </nav>
     <!-- nav script -->
     <script src="js/nav.js"></script>
-    <!-- login -->
-    <div id="regist_page">
-      <div class="regist_container">
-        <div class="regist_title">
-          <h2>회원정보 입력</h2>
+    <!-- delivery page -->
+    <div class="del_page">
+      <div class="del_wrap">
+        <div class="del_title_container">
+          <h1>성심당 상품배송</h1>
+          <p>맛있는 빵을 배송받는 3가지 방법</p>
         </div>
-        <form name="regist" action="#" class="regist" method="POST">
-          <div class="regist_table">
-            <ul class="required">
-              <li class="th">아이디</li>
-              <li class="td">
-                <input
-                  type="text"
-                  name="ID"
-                  placeholder="공백없는 영문/숫자 포함 6~20자"
-                  maxlength="20"
-                />
-              </li>
-            </ul>
-            <ul class="required">
-              <li class="th">비밀번호</li>
-              <li class="td">
-                <input
-                  type="password"
-                  name="password"
-                  placeholder="공백없는 영문/숫자 포함 6~20자"
-                  maxlength="20"
-                />
-              </li>
-            </ul>
-            <ul class="required">
-              <li class="th">비밀번호확인</li>
-              <li class="td">
-                <input
-                  type="password"
-                  name="password_chk"
-                  placeholder="공백없는 영문/숫자 포함 6~20자"
-                />
-              </li>
-            </ul>
-            <ul class="required">
-              <li class="th">이름</li>
-              <li class="td"><input type="text" name="name" /></li>
-            </ul>
-            <ul class="required">
-              <li class="th">이메일</li>
-              <li class="td">
-                <input type="text" name="email_fr" />@<input
-                  type="text"
-                  name="email_add"
-                />
-                <select name="email_add" id="email">
-                  <option value="">직접입력</option>
-                  <option value="naver.com">네이버</option>
-                  <option value="gmail.com">구글</option>
-                  <option value="hanmail.net">다음</option>
-                  <option value="yahoo.com">야후</option>
-                  <option value="nate.com">네이트</option>
-                </select>
-              </li>
-            </ul>
-            <ul class="required">
-              <li class="th">휴대폰번호</li>
-              <li class="td">
-                <input type="tel" name="phone1" id="phone1" maxlength="3" /> -
-                <input type="tel" name="phone2" id="phone2" maxlength="4" /> -
-                <input type="tel" name="phone3" id="phone3" maxlength="4" />
-              </li>
-            </ul>
+        <div class="del_category_container">
+          <div class="del_catBox">
+            <div class="del_catBox_imgContainer">
+              <img src="images/delivery_ktx.png" alt="ktx" />
+            </div>
+            <div class="del_catBox_textContainer">
+              <h3>KTX 배송</h3>
+              <div class="textBox">
+                <p>
+                  가까운 KTX역에서 상품을 받아보세요! <br />
+                  주문하신 상품은 아래 해당 역의 수화물센터에서 수령하실 수
+                  있습니다. <br />
+                  <span
+                    >경부선: 서울 / 광명/ 천안아산 / 동대구 / 울산 / 부산 / 마산
+                    / 신포항</span
+                  >
+                  <br />
+                  <span>호남선: 익산 / 광주송정 / 여수엑스포 / 목포</span>
+                </p>
+              </div>
+            </div>
           </div>
-          <button type="submit" name="submit">입력 완료</button>
-        </form>
+          <div class="del_catBox">
+            <div class="del_catBox_imgContainer">
+              <img src="images/delivery_daejeon.png" alt="daejeon" />
+            </div>
+            <div class="del_catBox_textContainer">
+              <h3>대전 배송</h3>
+              <div class="textBox">
+                <p>
+                  대전 시민이라면 집에서 상품을 받아보세요!<br />
+                  평일, 주말 상관없이 하루에 2번 무료로 배송받을 수 있습니다.
+                  <br />
+                  <span>1차 배송: 10시 ~ 13시</span><br />
+                  <span>2차 배송: 15시 ~ 19시</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="del_catBox">
+            <div class="del_catBox_imgContainer">
+              <img src="images/delivery_post.png" alt="postbox" />
+            </div>
+            <div class="del_catBox_textContainer">
+              <h3>택배 배송</h3>
+              <div class="textBox">
+                <p>
+                  일반적인 택배 배송입니다.<br />
+                  변질 우려가 있는 상품은 배송이 불가합니다. <br />
+                  <span>성심당 택배사: 롯데배송</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="del_comm_container">
+          <h3>이런 분들에게 추천합니다!</h3>
+          <div class="comm_icon_container">
+            <div class="iconBox">
+              <i class="fas fa-birthday-cake"></i>
+              <p>
+                자녀에게 케이크를 <br />
+                선물하고 싶을 때
+              </p>
+            </div>
+            <div class="iconBox">
+              <i class="fas fa-gifts"></i>
+              <p>
+                부모님께 약과세트를 <br />
+                선물드리고 싶을 때
+              </p>
+            </div>
+            <div class="iconBox">
+              <i class="fas fa-users"></i>
+              <p>
+                친구들과 맛있는 롤케이크를 <br />
+                먹고 싶을 때
+              </p>
+            </div>
+            <div class="iconBox">
+              <i class="fas fa-utensils"></i>
+              <p>
+                아침식사로 밥대신 <br />
+                빵을 먹고 싶을 때
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- regist.js -->
-    <script src="js/regist.js"></script>
     <!-- footer -->
     <footer>
       <div id="footer_box">

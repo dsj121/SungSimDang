@@ -11,6 +11,9 @@ $(".cat_depth2").on("mouseleave", function () {
     $(".cat_depth2").stop().slideToggle(500);
   }
 });
+$('.cat_depth3 li a').on('click', function(e){
+  e.preventDefault();
+})
 
 // mobile nav
 $(".mo_nav > i").on("click", function () {
