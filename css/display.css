@@ -123,7 +123,7 @@
     grid-template-rows: repeat(6, 600px);
   }
   #display_container .dsp_grid .dsp_grid_item {
-    padding: 0px 25px;
+    padding: 25px 25px 0px;
     border-top: 1px solid #b5b5b5;
   }
   #display_container .dsp_grid .dsp_grid_item a .dsp_img_container {
