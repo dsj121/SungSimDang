@@ -205,7 +205,7 @@
 @media screen and (max-width: 767px) {
   .slide_text .inner_text h2 {
     padding-top: 75px;
-    font-size: 25px;
+    font-size: 20px;
   }
   .slide_text .inner_text p {
     display: none;
