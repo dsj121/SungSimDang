@@ -364,8 +364,11 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
+  .item1 h2 {
+    font-size: 28px;
+  }
   .item1 .sub_slideContainer > ul li img {
-    width: 400px;
+    width: 280px;
   }
   .item1 .sub_slideContainer > ul li p {
     font-size: 13px;
@@ -379,7 +382,18 @@
     grid-row: 2 / 3;
     padding: 30px 60px;
   }
-
+  .item2 > .inner_box .inner_text h2 {
+    font-size: 24px;
+  }
+  .item2 > .inner_box .inner_text p {
+    font-size: 10px;
+  }
+  .row .middle_text h2 {
+    font-size: 20px;
+  }
+  .row .middle_text p {
+    font-size: 14px;
+  }
   .item3 {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
@@ -399,7 +413,11 @@
     grid-row: 5 / 6;
   }
   .item_text h2 {
+    font-size: 25px;
     margin-top: 110px;
+  }
+  .item_text p {
+    font-size: 14px;
   }
   .item6 {
     grid-column: 1 / 2;

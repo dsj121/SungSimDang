@@ -123,17 +123,13 @@
     grid-template-rows: repeat(6, 600px);
   }
   #display_container .dsp_grid .dsp_grid_item {
-    padding: 25px 25px 0px;
+    padding: 25px 10px 0px;
     border-top: 1px solid #b5b5b5;
   }
   #display_container .dsp_grid .dsp_grid_item a .dsp_img_container {
-    width: 300px;
+    width: 250px;
     margin: 0px auto;
   }
-  #display_container .dsp_grid .dsp_grid_item img {
-    width: 100%;
-  }
-
   #display_container .dsp_grid .dsp_grid_item .dsp_text {
     text-align: center;
     margin-top: 75px;
